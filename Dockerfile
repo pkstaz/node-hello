@@ -18,7 +18,7 @@
 
 
 
-FROM ubi8/nodejs-14 
+FROM quay.io/centos7/nodejs-12-centos7:latest
 # Add application sources to a directory that the assemble script expects them 
 # and set permissions so that the container runs without root access 
 USER 0 
