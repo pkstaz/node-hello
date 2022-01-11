@@ -12,4 +12,6 @@ COPY . .
 USER node
 EXPOSE 3000
 
+RUN sudo chown -R $USER:$(id -gn $USER) /.config
+
 CMD ["npm", "run", "start:dev"]
